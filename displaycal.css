@@ -27,14 +27,14 @@ h1 {
 }
 
 .fc-toolbar-title {
-    color: #d9aa27;
+    color: #f2e6b0;
 }
 
 .fc-button {
     background: #0b4650;
     border: none;
     border-radius: 8px;
-    color: #d9aa27;
+    color: #f2e6b0;
 }
 
 .fc-button:hover {
@@ -43,7 +43,7 @@ h1 {
 
 .fc-daygrid-day-number,
 .fc-col-header-cell-cushion {
-    color: #e8c76a;
+    color: #f2e6b0;
 }
 
 .fc-event {
