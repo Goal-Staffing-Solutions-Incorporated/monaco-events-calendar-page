@@ -1,54 +1,54 @@
 body {
-      margin: 0;
-      height: 100vh;
-      background: #06262D;
-      color: #d9aa27;
-      font-family: Arial, Helvetica, sans-serif;
-      display: flex;
-      flex-direction: column;
-    }
+    margin: 0;
+    height: 100vh;
+    background: #06262D;
+    color: #d9aa27;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
 
-    h1 {
-      text-align: center;
-      margin: 16px 0;
-      color: #d9aa27;
-    }
+h1 {
+    text-align: center;
+    margin: 16px 0;
+    color: #d9aa27;
+}
 
-    #calendar {
-      flex: 1;
-      padding: 10px;
-    }
+#calendar {
+    flex: 1;
+    padding: 10px;
+}
 
-    /* Calendar theming */
-    .fc {
-      background: #08333A;
-      border-radius: 12px;
-      padding: 10px;
-    }
+/* Calendar theming */
+.fc {
+    background: #08333A;
+    border-radius: 12px;
+    padding: 10px;
+}
 
-    .fc-toolbar-title {
-      color: #d9aa27;
-    }
+.fc-toolbar-title {
+    color: #d9aa27;
+}
 
-    .fc-button {
-      background: #0b4650;
-      border: none;
-      border-radius: 8px;
-      color: #d9aa27;
-    }
+.fc-button {
+    background: #0b4650;
+    border: none;
+    border-radius: 8px;
+    color: #d9aa27;
+}
 
-    .fc-button:hover {
-      filter: brightness(1.2);
-    }
+.fc-button:hover {
+    filter: brightness(1.2);
+}
 
-    .fc-daygrid-day-number,
-    .fc-col-header-cell-cushion {
-      color: #e8c76a;
-    }
+.fc-daygrid-day-number,
+.fc-col-header-cell-cushion {
+    color: #e8c76a;
+}
 
-    .fc-event {
-      background: #d9aa27 !important;
-      border: none !important;
-      color: #06262D !important;
-      font-weight: bold;
-    }
+.fc-event {
+    background: #d9aa27 !important;
+    border: none !important;
+    color: #06262D !important;
+    font-weight: bold;
+}
