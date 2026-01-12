@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Monaco Events</title>
 		<link rel="stylesheet" type="text/css" href="displaycal.css">
+
+		<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+		
+		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.8/index.global.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@6.1.8/index.global.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/list@6.1.8/index.global.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/ical.js@1.4.0/build/ical.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.8/index.global.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.8/index.global.min.js"></script>
+
 	</head>
 	<body>
 		
 		<!-- Header --> 
 		<div class="header">
 			<a href="https://monacoencino.com/"><img src=".\images\Monaco-Encino-Logo-Restaurant-in-Encino-California.png" style="padding-left:10px"></a> 
-			<h1>Monaco Events</h1> 
+			<!-- <h1>Monaco Events</h1>  -->
 		</div>
 
-		<!-- Content -->
-		<div class="calendar-container">
-			<iframe 
-				src="https://calendar.google.com/calendar/embed?src=ec639f6f37e248350658c779dd4d4917474cb9f504b1d9d85a149f1cbe37f03f%40group.calendar.google.com&ctz=America%2FLos_Angeles&bgcolor=%2306222D&color=%23d9aa27" 
-				frameborder="0" 
-				scrolling="no">
-			</iframe>
-		</div>
-		
+		<!-- Calendar -->
+		<div id="calendar"></div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() 
+			{
+				var calendarEl = document.getElementById('calendar');
+
+				var calendar = new FullCalendar.Calendar(calendarEl, 
+				{
+					initialView: 'dayGridMonth',
+
+					googleCalendarApiKey: 'AIzaSyCigAJ35wkbMk3pNxIrz8vgPVAA-ixZvuQ', // your API key
+
+					events: {
+						googleCalendarId: 'ec639f6f37e248350658c779dd4d4917474cb9f504b1d9d85a149f1cbe37f03f@group.calendar.google.com'
+					},
+
+					headerToolbar: {
+						left: 'prev,next today',
+						center: 'title',
+						right: 'dayGridMonth,timeGridWeek,listMonth'
+					},
+
+					height: '100%',
+					expandRows: true
+				});
+
+				calendar.render();
+			});
+		</script>
 
 	</body>
 </html>
