@@ -56,13 +56,13 @@ h1 {
 .subscribe-btn {
     background-color: #d9aa27;
     color: #06262D;
-    padding: 12px 22px;
+    padding: 5px 5px;
 
     margin-left: 10px;
     margin-right: 10px;
 
-    border-radius: 10px;
-    font-size: 18px;
+    border-radius: 5px;
+    font-size: 1vw;
     text-decoration: none;
     font-weight: bold;
     transition: opacity .2s ease-in-out;
