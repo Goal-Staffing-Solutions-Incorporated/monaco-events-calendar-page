@@ -52,3 +52,22 @@ h1 {
     color: #06262D !important;
     font-weight: bold;
 }
+
+.subscribe-btn {
+    background-color: #d9aa27;
+    color: #06262D;
+    padding: 12px 22px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity .2s ease-in-out;
+}
+
+.subscribe-btn:hover {
+    opacity: 0.8;
+}
